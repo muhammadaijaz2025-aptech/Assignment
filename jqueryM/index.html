@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+  </head>
+  <body>
+    <img src="images/unnamed (1).jpg" alt="wallpaper" id="image" /><br />
+    <!-- <button id="showbtn">show</button>&nbsp;
+    <button id="hidebtn">hide</button>&nbsp; -->
+    <button id="fadein">fade in</button>&nbsp;
+
+    <script src="jquery/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // $("#showbtn").hide();
+        // $("#showbtn").click(function () {
+        //   $("#image").toggle();
+        //   $("#hidebtn").show();
+        //   $("#showbtn").hide();
+        // });
+        //  $("#hidebtn").click(function () {
+        //   $("#image").toggle();
+        //   $("#showbtn").show();
+        //   $("#hidebtn").hide();
+        // });
+        $("#image").hide();
+        $("#fadein").click(function() {
+            $("#image").slideToggle(5000)
+        })
+      });
+    </script>
+  </body>
+</html>
